@@ -21,9 +21,10 @@ class ViewController: UIViewController {
     }
 
     // change to commit
-    // Hopefully this causes a problem
     
     // test again
+    // stuff
+    // trying to get a merge conflict
 
 }
 
