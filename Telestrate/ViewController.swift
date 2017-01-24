@@ -20,21 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // change to commit
-    
-    // test again
-    // stuff
     // trying to get a merge conflict
     //Sean's new test trying to make something break. :)
     
-    //Heres where your code use to be.
-    
-    
-    
-    
-    
+    //Here's where your code use to be.
     
     // Jan 23rd, on Monday at 8:35pm test
+    // Jan 23rd, on Monday at 8:42pm test
 
 }
 
