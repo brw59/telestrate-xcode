@@ -14,6 +14,8 @@
 		9C6835501E341BD50043838F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C68354E1E341BD50043838F /* LaunchScreen.storyboard */; };
 		9C68355B1E341BD50043838F /* TelestrateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68355A1E341BD50043838F /* TelestrateTests.swift */; };
 		9C6835661E341BD50043838F /* TelestrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6835651E341BD50043838F /* TelestrateUITests.swift */; };
+		9C8B040D1E37BAA70061A49C /* HostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B040C1E37BAA70061A49C /* HostController.swift */; };
+		9C8B040F1E37BAF50061A49C /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B040E1E37BAF50061A49C /* JoinController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9C6835611E341BD50043838F /* TelestrateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelestrateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6835651E341BD50043838F /* TelestrateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelestrateUITests.swift; sourceTree = "<group>"; };
 		9C6835671E341BD50043838F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8B040C1E37BAA70061A49C /* HostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostController.swift; sourceTree = "<group>"; };
+		9C8B040E1E37BAF50061A49C /* JoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				9C6835451E341BD50043838F /* AppDelegate.swift */,
 				9C6835471E341BD50043838F /* ViewController.swift */,
 				9C6835491E341BD50043838F /* Main.storyboard */,
+				9C8B040C1E37BAA70061A49C /* HostController.swift */,
+				9C8B040E1E37BAF50061A49C /* JoinController.swift */,
 				9C68354C1E341BD50043838F /* Assets.xcassets */,
 				9C68354E1E341BD50043838F /* LaunchScreen.storyboard */,
 				9C6835511E341BD50043838F /* Info.plist */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8B040D1E37BAA70061A49C /* HostController.swift in Sources */,
 				9C6835481E341BD50043838F /* ViewController.swift in Sources */,
 				9C6835461E341BD50043838F /* AppDelegate.swift in Sources */,
+				9C8B040F1E37BAF50061A49C /* JoinController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +522,7 @@
 				9C68356C1E341BD50043838F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C68356D1E341BD50043838F /* Build configuration list for PBXNativeTarget "TelestrateTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				9C68356F1E341BD50043838F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C6835701E341BD50043838F /* Build configuration list for PBXNativeTarget "TelestrateUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				9C6835721E341BD50043838F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
