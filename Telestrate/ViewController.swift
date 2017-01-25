@@ -15,9 +15,11 @@ class MainMenuController: UIViewController {
     }
     
     @IBAction func hostBtnAct(_ sender: UIButton) {
+        Settings.sharedInstance.isHost = true
     }
     
     @IBAction func joinBtnAct(_ sender: UIButton) {
+        Settings.sharedInstance.isHost = false
     }
     
     override func viewDidLoad() {

@@ -16,6 +16,14 @@
 		9C6835661E341BD50043838F /* TelestrateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6835651E341BD50043838F /* TelestrateUITests.swift */; };
 		9C8B040D1E37BAA70061A49C /* HostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B040C1E37BAA70061A49C /* HostController.swift */; };
 		9C8B040F1E37BAF50061A49C /* JoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B040E1E37BAF50061A49C /* JoinController.swift */; };
+		9C8B04111E37BEED0061A49C /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B04101E37BEED0061A49C /* ConnectionManager.swift */; };
+		9C8B04131E37DD800061A49C /* MCPeerID+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B04121E37DD800061A49C /* MCPeerID+Reusable.swift */; };
+		9C8B04151E3862580061A49C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B04141E3862580061A49C /* Settings.swift */; };
+		9C9F98FD1E38767800149E2D /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F98FC1E38767800149E2D /* Backup.swift */; };
+		9C9F98FF1E38824700149E2D /* JoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F98FE1E38824700149E2D /* JoinManager.swift */; };
+		9C9F99011E3885E300149E2D /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F99001E3885E300149E2D /* Tools.swift */; };
+		9C9F99031E388AA900149E2D /* HostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F99021E388AA900149E2D /* HostManager.swift */; };
+		9C9F99091E388F5200149E2D /* OtherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F99081E388F5200149E2D /* OtherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		9C6835671E341BD50043838F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C8B040C1E37BAA70061A49C /* HostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostController.swift; sourceTree = "<group>"; };
 		9C8B040E1E37BAF50061A49C /* JoinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinController.swift; sourceTree = "<group>"; };
+		9C8B04101E37BEED0061A49C /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		9C8B04121E37DD800061A49C /* MCPeerID+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MCPeerID+Reusable.swift"; sourceTree = "<group>"; };
+		9C8B04141E3862580061A49C /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9C9F98FC1E38767800149E2D /* Backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		9C9F98FE1E38824700149E2D /* JoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinManager.swift; sourceTree = "<group>"; };
+		9C9F99001E3885E300149E2D /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		9C9F99021E388AA900149E2D /* HostManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostManager.swift; sourceTree = "<group>"; };
+		9C9F99081E388F5200149E2D /* OtherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +120,9 @@
 				9C6835451E341BD50043838F /* AppDelegate.swift */,
 				9C6835471E341BD50043838F /* ViewController.swift */,
 				9C6835491E341BD50043838F /* Main.storyboard */,
-				9C8B040C1E37BAA70061A49C /* HostController.swift */,
-				9C8B040E1E37BAF50061A49C /* JoinController.swift */,
+				9C9F99071E388DA200149E2D /* tools */,
+				9C9F99061E388D7400149E2D /* temp */,
+				9C9F99041E388D3700149E2D /* deviceConnection */,
 				9C68354C1E341BD50043838F /* Assets.xcassets */,
 				9C68354E1E341BD50043838F /* LaunchScreen.storyboard */,
 				9C6835511E341BD50043838F /* Info.plist */,
@@ -129,6 +146,37 @@
 				9C6835671E341BD50043838F /* Info.plist */,
 			);
 			path = TelestrateUITests;
+			sourceTree = "<group>";
+		};
+		9C9F99041E388D3700149E2D /* deviceConnection */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B040C1E37BAA70061A49C /* HostController.swift */,
+				9C9F99021E388AA900149E2D /* HostManager.swift */,
+				9C8B040E1E37BAF50061A49C /* JoinController.swift */,
+				9C9F98FE1E38824700149E2D /* JoinManager.swift */,
+				9C9F99081E388F5200149E2D /* OtherManager.swift */,
+			);
+			name = deviceConnection;
+			sourceTree = "<group>";
+		};
+		9C9F99061E388D7400149E2D /* temp */ = {
+			isa = PBXGroup;
+			children = (
+				9C9F99001E3885E300149E2D /* Tools.swift */,
+				9C9F98FC1E38767800149E2D /* Backup.swift */,
+				9C8B04101E37BEED0061A49C /* ConnectionManager.swift */,
+			);
+			name = temp;
+			sourceTree = "<group>";
+		};
+		9C9F99071E388DA200149E2D /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				9C8B04121E37DD800061A49C /* MCPeerID+Reusable.swift */,
+				9C8B04141E3862580061A49C /* Settings.swift */,
+			);
+			name = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +316,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9F99031E388AA900149E2D /* HostManager.swift in Sources */,
+				9C8B04111E37BEED0061A49C /* ConnectionManager.swift in Sources */,
 				9C8B040D1E37BAA70061A49C /* HostController.swift in Sources */,
 				9C6835481E341BD50043838F /* ViewController.swift in Sources */,
 				9C6835461E341BD50043838F /* AppDelegate.swift in Sources */,
+				9C8B04151E3862580061A49C /* Settings.swift in Sources */,
+				9C9F98FF1E38824700149E2D /* JoinManager.swift in Sources */,
+				9C9F98FD1E38767800149E2D /* Backup.swift in Sources */,
 				9C8B040F1E37BAF50061A49C /* JoinController.swift in Sources */,
+				9C8B04131E37DD800061A49C /* MCPeerID+Reusable.swift in Sources */,
+				9C9F99091E388F5200149E2D /* OtherManager.swift in Sources */,
+				9C9F99011E3885E300149E2D /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
